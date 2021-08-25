@@ -4,8 +4,8 @@ import './App.css';
 
 function App() {
   
-  let [testval, testval_change] = useState('you suCK');
-  let [sucktext, assign_sucktext] = useState ('굿');
+  let [testval, testval_change] = useState("'Watch your language'");
+  let [sucktext, assign_sucktext] = useState ('Flip');
   let suckcount = true;
 
   return (
@@ -14,7 +14,7 @@ function App() {
         <div>EAX Enterprises GmbH</div>  
       </div>
       <div className="list">
-        <h3>yousuck <img src={logo} width={30} alt="Logo" onClick={ ()=>{ suckcount = !suckcount; assign_sucktext((suckcount)? '굿':'노굿'); }}/> {sucktext}</h3>
+        <h3>Click this image to check data binding <img src={logo} width={30} alt="Logo" onClick={ ()=>{ suckcount = !suckcount; assign_sucktext((suckcount)? 'Flip':'Flop'); }}/> {sucktext}</h3>
         <p class="semi-text">test man</p>
         <hr/>
       </div>
@@ -23,7 +23,7 @@ function App() {
           <li>This is a sample message</li>
         </ul>
         <p className="talkbox">
-          function ({testval});
+          javscript:alert ({testval});
         </p>
       </div>  
     </div>
