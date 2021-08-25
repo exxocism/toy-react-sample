@@ -21,10 +21,14 @@ function App() {
       <div className="maintext">
         <ul>
           <li>This is a sample message</li>
-        </ul>
-        <p className="talkbox">
+          <p className="talkbox">
           javscript:alert ({testval});
-        </p>
+          </p>
+          <br />
+          <li>And also a sample message</li>
+          <li>Triple Check!</li>
+        </ul>
+        
       </div>  
     </div>
   );
